@@ -1,13 +1,9 @@
-const h1= document.querySelector(".hello:first-child h1");
+const loginInput = document.querySelector("#login-form input");
+const loginButton = document.querySelector("#login-form button");
 
-function handleTitleClick(){
+function onLoginClick(){
+	console.log("hello", loginInput.value);
 	
-	if(h1.className === "active"){
-		h1.className = "";
-	}
-	else{
-		h1.className = "active";
-	}
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginButton.addEventListener("click", onLoginClick);
